@@ -8,11 +8,12 @@ class Produto:
         self.preco = preco
 
     def etiqueta(self):
-        intervalo = "-" * 30
-        valor = f'R$ {self.preco:.2f}'
-        preco = f"{'.' * ((30 - len(valor))//2)}{valor}{'.' * ((30-len(valor))//2)}"
-        caixa = Panel(f"{self.nome}\n{intervalo}\n {preco}", title="Produto", width=35)
-        print(caixa)
+        conteudo = f"{self.nome.center(30, ' ')}"
+        conteudo += "-" * 30
+        valor = f'R$ {self.preco:,.2f}'
+        conteudo += f"\n{valor.center(30, ' ')}"
+        etiqueta = Panel(conteudo, title="Produto", width=34)
+        print(etiqueta)
 
 p1 = Produto("iPhone 17 Pro Max", 25_000.85)
 p2 = Produto("Notebook Gamer", 8_000)
