@@ -1,11 +1,12 @@
 from poligono import poligono
 
 class quadrado(poligono):
-  def __init__(self, lados):
-    super().__init__(lados)
+  def __init__(self, lado = 1):
+    super().__init__(4)
+    self.lado = lado
   
   def perimetro(self):
-    return self.qtd_lados * 4
+    return self.lado * 4
   
   def area(self):
-    return self.qtd_lados ** 2
+    return self.lado ** 2

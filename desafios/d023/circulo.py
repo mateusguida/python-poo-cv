@@ -2,8 +2,8 @@ from poligono import poligono
 import math
 
 class circulo(poligono):
-    def __init__(self, raio):
-        super().__init__(1)
+    def __init__(self, raio = 1):
+        super().__init__(0)
         self.raio = raio
 
     def perimetro(self):
