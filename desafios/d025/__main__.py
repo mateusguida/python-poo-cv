@@ -3,7 +3,7 @@ from rich import print
 from rich.table import Table
 
 def main():
-    dist = 10
+    dist = 100
     viagem = [Moto(dist), Caminhao(dist), Drone(dist)]
     
     print()
