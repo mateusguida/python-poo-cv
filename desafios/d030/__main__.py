@@ -3,9 +3,13 @@ from Credencial import Credencial
 
 def main():
   c = Credencial()
-  c.senha = "Gafanhoto"
+  c.senha = "CeV!@"
+  print(c.senha)
 
-  inspect(c, methods=True, private=True, title="Credencial")
+  c.validar("Curso123")
+  c.validar("CeV!@")
+
+  # inspect(c, methods=True, private=True, title="Credencial")
 
 if __name__ == "__main__":
   main()
